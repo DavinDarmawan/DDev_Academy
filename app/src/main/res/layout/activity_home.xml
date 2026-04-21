@@ -4,126 +4,91 @@
     android:id="@+id/main_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F9FA"
+    android:background="#F5F7FA"
     android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <RelativeLayout
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seminar Registration App"
+            android:textColor="#1E293B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background="#0077B6"
-            android:padding="20dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:strokeColor="#D6E4FF"
+            app:strokeWidth="1dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Selamat Datang,"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/tvUserName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DDev Academy"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/favicon" />
-        </RelativeLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="-50dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="8dp">
-
-            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/background_login" />
-        </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="18dp">
 
-        <GridLayout
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/favicon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selamat datang"
+                        android:textColor="#64748B"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="DDev Academy Student"
+                        android:textColor="#0F172A"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDaftarSeminar"
+            style="@style/Widget.Material3.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:columnCount="4"
-            android:alignmentMode="alignMargins">
+            android:layout_marginTop="24dp"
+            android:text="Daftar Seminar"
+            app:icon="@android:drawable/ic_menu_agenda"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="8dp">
-                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_edit" app:tint="#0077B6" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ruang" android:textSize="10sp" android:layout_marginTop="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="8dp">
-                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_camera" app:tint="#FF9800" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Robo" android:textSize="10sp" android:layout_marginTop="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="8dp">
-                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_today" app:tint="#4CAF50" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Live" android:textSize="10sp" android:layout_marginTop="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="8dp">
-                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_help" app:tint="#E91E63" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanya" android:textSize="10sp" android:layout_marginTop="5dp"/>
-            </LinearLayout>
-        </GridLayout>
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogout"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:backgroundTint="@color/pullpe_drak"
-            android:text="Logout"
-            android:textColor="@android:color/white" />
+            android:layout_marginTop="12dp"
+            android:text="Logout" />
 
     </LinearLayout>
 </ScrollView>

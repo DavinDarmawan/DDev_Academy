@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DDev Academy</string>
+    <string-array name="seminar_options">
+        <item>Pilih seminar</item>
+        <item>Android Development for Beginners</item>
+        <item>UI/UX Design Essentials</item>
+        <item>Data Analytics for Students</item>
+        <item>Cybersecurity Awareness</item>
+        <item>AI Productivity for Campus Projects</item>
+    </string-array>
 </resources>

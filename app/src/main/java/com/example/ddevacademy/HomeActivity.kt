@@ -20,19 +20,27 @@ class HomeActivity : AppCompatActivity() {
 
         // 2. Inisialisasi View
         val tvUserName = findViewById<TextView>(R.id.tvUserName)
+        val btnDaftarSeminar = findViewById<Button>(R.id.btnDaftarSeminar)
         val btnLogout = findViewById<Button>(R.id.btnLogout)
 
         // Mengatur padding otomatis untuk menghindari status bar/navigation bar
         // Ini memastikan ScrollView kamu benar-benar "lega" di bagian atas
-        val mainView = findViewById<android.widget.ScrollView>(R.id.main_scroll_view) // Pastikan ID ini ada di XML ScrollView kamu
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { v, insets ->
+        val mainView = findViewById<android.widget.ScrollView>(R.id.main_scroll_view)
+        ViewCompat.setOnApplyWindowInsetsListener(mainView) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, 0, systemBars.right, systemBars.bottom)
             insets
         }
 
         // 3. Set Nama User
-        tvUserName.text = "DDev Academy Student"
+        val username = intent.getStringExtra("username").orEmpty()
+        tvUserName.text = if (username.isBlank()) "DDev Academy Student" else username
+
+        btnDaftarSeminar.setOnClickListener {
+            val intent = Intent(this, SeminarRegistrationActivity::class.java)
+            intent.putExtra("username", tvUserName.text.toString())
+            startActivity(intent)
+        }
 
         // 4. Logika Tombol Logout
         btnLogout.setOnClickListener {

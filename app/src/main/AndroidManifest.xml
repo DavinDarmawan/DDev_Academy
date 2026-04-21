@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DDevAcademy">
         <activity
+            android:name=".SeminarResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeminarRegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
