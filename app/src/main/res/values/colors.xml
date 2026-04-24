@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="primary">#4A148C</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="secondary">#7B1FA2</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="background">#F5F7FA</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="stroke_soft">#D6E4FF</color>
+    <color name="error">#B3261E</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pullpe_drak">#4A148C</color>
