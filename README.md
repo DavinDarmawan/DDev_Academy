@@ -87,7 +87,7 @@ Menampilkan:
 
 ## Video Penjelasan (Wajib UTS)
 
-Link video: [ISI LINK YOUTUBE / GDRIVE DI SINI]
+Link video: https://youtu.be/7SsnwzWoZFs
 
 Isi video:
 
