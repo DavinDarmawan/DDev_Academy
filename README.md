@@ -86,7 +86,7 @@ Menampilkan:
 - Tombol kembali ke home
 
 ## Video Penjelasan (Wajib UTS)
-(https://img.youtube.com/vi/7SsnwzWoZFs/0.jpg)](https://youtu.be/7SsnwzWoZFs?si=HSJ9DoRjL4ccXq0h)
+[![UTS Pemrograman Mobile I - Davin Darmawan](https://img.youtube.com/vi/7SsnwzWoZFs/0.jpg)](https://www.youtube.com/watch?v=7SsnwzWoZFs)
 Link video: https://youtu.be/7SsnwzWoZFs
 
 Isi video:
